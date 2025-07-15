@@ -56,7 +56,7 @@ with DAG(
         print("✅ Data transformed.")
         return transformed
 
-    # Step 4: Load to PostgreSQL
+    # Step 4:  Load to PostgreSQL
     @task
     def load_data_to_postgres(apod_data: dict):
         insert_query = """
